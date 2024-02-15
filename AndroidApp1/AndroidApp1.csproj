@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0-android</TargetFramework>
+        <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+        <OutputType>Exe</OutputType>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <ApplicationId>com.companyname.AndroidApp1</ApplicationId>
+        <ApplicationVersion>1</ApplicationVersion>
+        <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="..\MauiApp1\Platforms\Android\Shared\MainApplication.cs">
+            <Link>Shared\MainApplication.cs</Link>
+        </Compile>
+        <Compile Include="..\MauiApp1\Platforms\Android\Shared\MainActivity.cs">
+            <Link>Shared\MainActivity.cs</Link>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\MauiApp1\MauiApp1.csproj" />
+    </ItemGroup>
+</Project>
